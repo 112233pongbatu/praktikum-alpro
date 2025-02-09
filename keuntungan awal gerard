@@ -1,0 +1,19 @@
+harga_pembelian_pertama = 650000  
+jumlah_gram_pertama= 25  
+
+ 
+harga_jual_sekarang = 685000  
+
+ 
+modal_pertama = harga_pembelian_pertama* jumlah_gram_pertama  
+
+ 
+harga_total_sekarang = harga_jual_sekarang * jumlah_gram_pertama
+
+ 
+keuntungan_pertama_rp = harga_total_sekarang - modal_pertama 
+ 
+keuntungan_pertama_persen = (keuntungan_pertama_rp/ modal_pertama) * 100  
+ 
+print("Keuntungan pertama dalam Rp:", keuntungan_pertama_rp)
+print("Keuntungan pertama dalam %:", round(keuntungan_pertama_persen, 2), "%")
