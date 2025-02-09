@@ -1,0 +1,35 @@
+harga_pembelian_pertama= 650000  
+jumlah_gram_pertama = 25  
+
+harga_jual_sekarang = 685000  
+
+modal_pertama= harga_pembelian_pertama * jumlah_gram_pertama
+
+harga_total_sekarang = harga_jual_sekarang * jumlah_gram_pertama  
+
+keuntungan_pertama_rp = harga_total_sekarang - modal_pertama 
+
+keuntungan_pertama_persen = (keuntungan_pertama_rp / modal_pertama) * 100  
+
+print("Keuntungan pertama dalam Rp:", keuntungan_pertama_rp)
+print("Keuntungan pertama dalam %:", round(keuntungan_pertama_persen, 2), "%")
+
+jumlah_gram_baru = 15  
+harga_pembelian_baru = 685000  
+
+modal_baru = jumlah_gram_baru * harga_pembelian_baru  
+
+total_modal = modal_pertama + modal_baru  
+
+total_gram = jumlah_gram_pertama + jumlah_gram_baru  
+
+harga_jual_terbaru = 715000  
+
+harga_total_baru = total_gram * harga_jual_terbaru  
+
+keuntungan_total_rp = harga_total_baru - total_modal  
+
+keuntungan_total_persen = (keuntungan_total_rp / total_modal) * 100  
+
+print("Keuntungan total dalam Rp:", keuntungan_total_rp)
+print("Keuntungan total dalam %:", round(keuntungan_total_persen, 2), "%")
